@@ -17,6 +17,8 @@ a {
     color: inherit;
 }
 
+/* ================= HEADER ================= */
+
 header {
     height: 100vh;
     background: linear-gradient(135deg, #ffb3c6, #ffe5ec);
@@ -54,6 +56,8 @@ header p {
     background: #ff1a3c;
 }
 
+/* ================= SECTIONS ================= */
+
 section {
     padding: 80px 20px;
     max-width: 1000px;
@@ -75,14 +79,17 @@ section h2 {
     color: #ff4d6d;
 }
 
+/* ================= ABOUT ================= */
+
 .about p {
     max-width: 700px;
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     text-align: center;
     font-size: 1.1rem;
 }
 
-/* Skills */
+/* ================= SKILLS ================= */
+
 .skills {
     display: flex;
     flex-wrap: wrap;
@@ -115,10 +122,76 @@ section h2 {
     width: 100%;
 }
 
-/* Projects */
-.projects {
+/* ================= SERVICES ================= */
+
+.services-list {
+    list-style: none;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.services-list li {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.services-list li:hover {
+    background: #ff4d6d;
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+/* ================= EXPERIENCE ================= */
+
+.experience-list {
+    list-style: none;
+    padding: 0;
+}
+
+.experience-item {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    margin-bottom: 15px;
+}
+
+.experience-item:hover {
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.experience-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    font-size: 0.9rem;
+    margin-top: 0;
+    color: #555;
+    line-height: 1.6;
+}
+
+.experience-item:hover .experience-details {
+    max-height: 200px;
+    margin-top: 10px;
+}
+
+/* ================= PROJECTS ================= */
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
 }
 
@@ -136,7 +209,7 @@ section h2 {
 
 .project img {
     width: 100%;
-    height: 150px;
+    height: 180px;
     object-fit: cover;
 }
 
@@ -149,6 +222,10 @@ section h2 {
     color: #ff4d6d;
 }
 
+.project-content p {
+    font-size: 0.95rem;
+}
+
 .project-content a {
     display: inline-block;
     margin-top: 10px;
@@ -156,17 +233,18 @@ section h2 {
     font-weight: 600;
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
+
 .contact {
     text-align: center;
 }
 
 .contact a {
     display: inline-block;
-    width: 200px; 
+    width: 220px;
     text-align: center;
     margin: 10px;
-    padding: 10px 0; 
+    padding: 12px 0;
     background: #ff4d6d;
     color: white;
     border-radius: 25px;
@@ -177,6 +255,24 @@ section h2 {
     background: #ff1a3c;
 }
 
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-links .btn {
+    width: 250px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+/* ================= FOOTER ================= */
 
 footer {
     text-align: center;
@@ -185,14 +281,29 @@ footer {
     color: #fff;
 }
 
+/* ================= ANIMATIONS ================= */
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
         transform: translateY(20px);
     }
-
     100% {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+#availability {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#availability p {
+    margin: 0;       /* remove default margins */
+    font-size: 1.05rem;
+    text-align: center; /* ensure text itself is centered */
 }

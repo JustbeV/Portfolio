@@ -18,3 +18,6 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+
+document.getElementById('currentYear').textContent = new Date().getFullYear();
