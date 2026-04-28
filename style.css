@@ -17,6 +17,77 @@ a {
     color: inherit;
 }
 
+/* ================= NAVBAR ================= */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 30px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 12px rgba(255, 77, 109, 0.1);
+    transition: background 0.3s;
+}
+
+#navbar.scrolled {
+    background: rgba(255, 255, 255, 0.97);
+}
+
+.nav-logo {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #ff4d6d;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+.nav-links a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: #555;
+    transition: color 0.2s;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff4d6d;
+    transition: width 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ff4d6d;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #ff4d6d;
+}
+
 /* ================= HEADER ================= */
 
 header {
@@ -28,6 +99,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 0 20px;
+    padding-top: 60px; /* offset for fixed nav */
 }
 
 header h1 {
@@ -42,6 +114,14 @@ header p {
     animation: fadeIn 1.5s ease forwards;
 }
 
+.header-buttons {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    animation: fadeIn 1.8s ease forwards;
+}
+
 .btn {
     padding: 10px 25px;
     background: #ff4d6d;
@@ -50,10 +130,37 @@ header p {
     border-radius: 25px;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-block;
 }
 
 .btn:hover {
     background: #ff1a3c;
+}
+
+.btn-outline {
+    background: transparent;
+    border: 2px solid #ff4d6d;
+    color: #ff4d6d;
+}
+
+.btn-outline:hover {
+    background: #ff4d6d;
+    color: white;
+}
+
+.btn-outline-dark {
+    background: transparent;
+    border: 2px solid #ff4d6d;
+    color: #ff4d6d;
+    padding: 10px 25px;
+    border-radius: 25px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-outline-dark:hover {
+    background: #ff4d6d;
+    color: white;
 }
 
 /* ================= SECTIONS ================= */
@@ -81,11 +188,50 @@ section h2 {
 
 /* ================= ABOUT ================= */
 
-.about p {
-    max-width: 700px;
-    margin: 0 auto 20px auto;
-    text-align: center;
-    font-size: 1.1rem;
+.about-inner {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-photo-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    flex-shrink: 0;
+}
+
+.about-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ff4d6d;
+    box-shadow: 0 8px 24px rgba(255, 77, 109, 0.25);
+}
+
+.graduate-badge {
+    background: linear-gradient(135deg, #ff4d6d, #ffb3c6);
+    color: white;
+    font-size: 0.82rem;
+    font-weight: 600;
+    padding: 6px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
+    box-shadow: 0 4px 10px rgba(255, 77, 109, 0.3);
+}
+
+.about-text {
+    max-width: 560px;
+}
+
+.about-text p {
+    font-size: 1.05rem;
+    margin-bottom: 15px;
+    color: #444;
 }
 
 /* ================= SKILLS ================= */
@@ -233,6 +379,79 @@ section h2 {
     font-weight: 600;
 }
 
+/* ================= HOBBIES ================= */
+
+.hobbies-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    color: #666;
+    margin-bottom: 30px;
+    margin-top: -20px;
+}
+
+.hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+.hobby-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    padding-bottom: 20px;
+}
+
+.hobby-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 24px rgba(255, 77, 109, 0.15);
+}
+
+.hobby-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    display: block;
+}
+
+.hobby-icon {
+    font-size: 2.5rem;
+    padding: 20px 0 8px;
+}
+
+.hobby-card h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ff4d6d;
+    margin: 0 15px 8px;
+}
+
+.hobby-card p {
+    font-size: 0.875rem;
+    color: #666;
+    padding: 0 15px;
+    line-height: 1.5;
+}
+
+.hobbies-note {
+    text-align: center;
+    font-size: 0.82rem;
+    color: #aaa;
+    margin-top: 25px;
+}
+
+.hobbies-note code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
 /* ================= CONTACT ================= */
 
 .contact {
@@ -262,9 +481,10 @@ section h2 {
     flex-wrap: wrap;
 }
 
-.contact-links .btn {
-    width: 250px;
-    height: 80px;
+.contact-links .btn,
+.contact-links .btn-outline-dark {
+    width: 200px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -303,7 +523,51 @@ footer {
 }
 
 #availability p {
-    margin: 0;       /* remove default margins */
+    margin: 0;
     font-size: 1.05rem;
-    text-align: center; /* ensure text itself is centered */
+    text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        padding: 10px 0;
+    }
+
+    .nav-links.open {
+        display: flex;
+    }
+
+    .nav-links li a {
+        display: block;
+        padding: 12px 30px;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    header h1 {
+        font-size: 2.2rem;
+    }
+
+    .about-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text p {
+        text-align: center;
+    }
 }
