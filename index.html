@@ -4,452 +4,314 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prince Carlo Monacillo | Virtual Assistant</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#f6f4ef">
+    <meta name="description" content="The portfolio of Prince Carlo Monacillo, sharing virtual assistance, IT support, and web development work.">
+    <title>Prince Carlo Monacillo — Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <!-- NAV BAR -->
-    <nav id="navbar">
-        <div class="nav-logo">PCM</div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">&#9776;</button>
+    <nav class="site-nav" id="navbar" aria-label="Main navigation">
+        <a class="wordmark" href="#top" aria-label="Prince Carlo Monacillo, home">PCM<span>.</span></a>
+        <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Open navigation">
+            <span></span><span></span>
+        </button>
         <ul class="nav-links" id="navLinks">
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#why-me">Why Me</a></li>
             <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a href="#projects">Work</a></li>
             <li><a href="#skills">Skills</a></li>
-            <li><a href="#certifications">Certifications</a></li>
-            <li><a href="#hobbies">Hobbies</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#certifications">Certificates</a></li>
+            <li><a href="#hobbies">Beyond work</a></li>
+            <li><a class="nav-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a></li>
         </ul>
     </nav>
 
-    <!-- HEADER -->
-    <header>
-        <div class="hero-content">
-            <h1 class="gradient-text">Prince Carlo Monacillo</h1>
-            <p class="hero-sub">IT • Virtual Assistant • Web & Support</p>
-            <p class="hero-role">Reliable assistant helping businesses stay organized — I’m <span id="role">a Virtual
-                    Assistant</span></p>
-            <div class="header-buttons">
-                <a href="#contact" class="btn btn-primary">Hire Me</a>
-                <a href="assets/resume.pdf" download class="btn btn-outline">Download Resume</a>
-            </div>
-        </div>
-    </header>
-
-    <!-- ABOUT -->
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <div class="about-inner">
-            <div class="about-photo-wrapper">
-                <img src="assets/profile.jpg" alt="Prince Carlo Monacillo" class="about-photo"
-                    onerror="this.src='https://placehold.co/200x200/ffb3c6/fff?text=PCM'">
-                <span class="graduate-badge"> IT | Software Developer | Virtual Assistant </span>
-            </div>
-            <div class="about-text">
-                <p>
-                    I am an IT professional and detail-oriented virtual assistant, continuously developing my skills in
-                    administrative support, data management, and digital tools.
-                </p>
-                <p>
-                    I assist with data entry, research, organization, and customer support, helping businesses stay
-                    productive and organized.
-                </p>
-                <p>
-                    I also have hands-on experience in web and database projects, allowing me to work comfortably with
-                    digital platforms and quickly adapt to new systems. In addition, I have experience in IT support,
-                    including computer and printer troubleshooting, hardware setup, and basic technical problem-solving.
-                </p>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- SERVICES -->
-    <section id="services">
-        <h2>Services Offered</h2>
-        <ul class="services-list">
-            <li>Email & Calendar Management</li>
-            <li>Data Entry & Database Organization</li>
-            <li>Online Research & Information Gathering</li>
-            <li>Customer Support & Communication</li>
-            <li>Administrative Assistance</li>
-            <li>File & Document Organization</li>
-            <li>Web & Android Development Support</li>
-            <li>Technical Troubleshooting</li>
-        </ul>
-    </section>
-
-    <!-- WHY CHOOSE ME -->
-    <section id="why-me">
-        <h2>Why Choose Me</h2>
-        <ul class="services-list">
-            <li>Detail-oriented and organized</li>
-            <li>Fast response and clear communication</li>
-            <li>Confidential handling of sensitive information</li>
-            <li>Deadline-focused and reliable</li>
-            <li>Independent and proactive worker</li>
-            <li>Committed to delivering quality results</li>
-        </ul>
-    </section>
-
-    <!-- EXPERIENCE -->
-    <section id="experience">
-        <h2>Experience & Skills Development</h2>
-        <ul class="services-list experience-list">
-
-            <li class="experience-item">
-                Completed academic and personal web development projects
-                <div class="experience-details">
-                    Developed responsive web applications using HTML, CSS, JavaScript, and PHP.
-                    Built full CRUD (Create, Read, Update, Delete) systems connected to MySQL databases.
-                    Implemented user authentication, form validation, and dynamic content rendering.
-                    Focused on clean layout structure, responsive design, and practical backend integration.
-                </div>
-            </li>
-
-            <li class="experience-item">
-                Practiced building database-driven applications
-                <div class="experience-details">
-                    Worked with basic database structures and CRUD operations.
-                    Practiced organizing data efficiently and connecting applications
-                    to structured backend systems.
-                </div>
-            </li>
-
-            <li class="experience-item">
-                Familiar with organizing and managing digital records
-                <div class="experience-details">
-                    Created structured folder systems and applied consistent naming
-                    conventions to improve file accessibility and workflow efficiency.
-                </div>
-            </li>
-
-            <li class="experience-item">
-                Comfortable using productivity and communication tools
-                <div class="experience-details">
-                    Experienced in using tools such as Google Workspace and
-                    collaboration platforms to manage tasks and maintain
-                    organized communication.
-                </div>
-            </li>
-
-            <li class="experience-item">
-                Adaptable and committed to continuous improvement
-                <div class="experience-details">
-                    Able to understand new tools and workflows with guidance.
-                    Actively improving technical skills through hands-on projects
-                    and consistent practice.
-                </div>
-            </li>
-
-            <li class="experience-item">
-                Basic graphic design using <a href="https://www.canva.com/" target="_blank">Canva</a>
-                <div class="experience-details">
-                    Designed simple layouts for folders and documents.
-                    Focused on clarity, structure, and visually organized presentation.
-                </div>
-            </li>
-
-        </ul>
-    </section>
-
-    <!-- PROJECTS / WORK SAMPLES -->
-    <section id="projects">
-        <h2>Projects & Work Samples</h2>
-
-        <div class="projects">
-            <div class="project">
-                <img src="assets/anime-manga-library.png" alt="Anime & Manga Library">
-                <div class="project-content">
-                    <h3>Anime & Manga Library</h3>
-                    <p>A web-based Laravel application allowing users to browse anime and manga collections,
-                        while administrators can manage entries through a secure dashboard. Focused on structured
-                        database design,
-                        role-based access control, and responsive layout.</p>
-                    <a href="https://github.com/JustbeV/Library" target="_blank">View on GitHub</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/folder-design.png" alt="Canva Folder Design">
-                <div class="project-content">
-                    <h3>Folder Design</h3>
-                    <p>Created visually organized folder layouts using <a href="https://www.canva.com/"
-                            target="_blank">Canva</a> to demonstrate design skills.</p>
-                    <a href="https://www.canva.com/design/DAHCg9WnB2g/CotM1G1rjBoLel1EhIl0aA/edit?utm_content=DAHCg9WnB2g&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                        target="_blank">View Design</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/ticketing-system.png" alt="Ticketing System">
-                <div class="project-content">
-                    <h3>Ticketing System</h3>
-                    <p>A Laravel-based web system for managing IT support requests. Users can submit tickets for technical issues, track their status, and add details or attachments. Admins and support staff handle, update, and resolve tickets through a structured workflow. The system helps organize and simplify the process of reporting and fixing IT problems.</p>
-                    <a href="https://github.com/JustbeV/Ticketing-System" target="_blank">View Repository</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/smart_detector_app.png" alt="Smart Detector System">
-                <div class="project-content">
-                    <h3>Smart Water-Based Fire Detection System</h3>
-                    <p>
-                        Developed a complete smart fire detection and suppression system.
-                        Integrated hardware sensors, automated alerts, and a mobile app interface.
-                        The system can send notifications and optionally contact emergency services.
-                    </p>
-                    <a href="https://github.com/JustbeV/SmartDetectorApp" target="_blank">App Repository</a><br>
-                    <a href="https://github.com/JustbeV/SmartDetector-" target="_blank">Prototype Repository</a>
-                </div>
-            </div>
-
-            <div class="project">
-                <img src="assets/Tuktokra-web.png" alt="Tuktokra Hiking Website">
-                <div class="project-content">
-                    <h3>Tuktokra – Hiking Community Website</h3>
-                    <p>
-                        Managed a hiking and adventure community website along with its associated Facebook page and
-                        online presence.
-                        Handled content updates, page structure, and overall user experience to support a small outdoor
-                        group.
-                        The platform includes multiple pages such as hikes, guides, gallery, about, and contact,
-                        designed with a
-                        responsive layout, smooth animations, and a nature-inspired design system to engage the
-                        community and promote
-                        outdoor activities.
-                    </p>
-                    <a href="https://github.com/JustbeV/Tuktokra" target="_blank">GitHub Repository</a><br>
-                    <a href="https://justbev.github.io/Tuktokra/" target="_blank">Live Demo</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- TECHNICAL SKILLS -->
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JavaScript</div>
-            <div class="skill">Java</div>
-            <div class="skill">Python</div>
-            <div class="skill">PHP</div>
-            <div class="skill">MySQL</div>
-            <div class="skill">Computer Maintenance</div>
-            <div class="skill">Software Troubleshooting</div>
-        </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="certs-section">
-        <h2>Certifications</h2>
-        <p style="text-align:center; color:#666; max-width:800px; margin:0 auto 24px;">Selected certificates that
-            demonstrate my technical and developer-ready skills.</p>
-
-        <div class="cert-grid">
-            <div class="cert-card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <img class="cert-img"
-                    src="assets/certs/www.freecodecamp.org_certification_carlooo_b1-english-for-developers (1).png"
-                    alt="freeCodeCamp B1 English for Developers Certification"
-                    onerror="this.src='https://placehold.co/420x260?text=Certificate'">
-                <div class="cert-meta">
-                    <h3 itemprop="name">B1 English for Developers (Beta)</h3>
-                    <div class="cert-sub">freeCodeCamp — <span itemprop="startDate">2026</span></div>
-                    <div class="cert-actions">
-                        <button class="cert-view btn-outline" data-title="B1 English for Developers (Beta)"
-                            data-issuer="freeCodeCamp" data-date="2026"
-                            data-img="assets/certs/www.freecodecamp.org_certification_carlooo_b1-english-for-developers (1).png"
-                            data-link="https://www.freecodecamp.org/certification/carlooo/b1-english-for-developers">View</button>
-                        <a href="https://www.freecodecamp.org/certification/carlooo/b1-english-for-developers"
-                            class="btn" target="_blank">Verify</a>
+    <main id="main">
+        <header class="hero" id="top">
+            <div class="hero-inner">
+                <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> IT · Virtual assistance · Web support</p>
+                <h1>Prince Carlo<br><em>Monacillo</em></h1>
+                <div class="hero-bottom">
+                    <p class="hero-intro">I help keep work organized and systems running smoothly, bringing together administrative support, practical IT know-how, and hands-on web projects.</p>
+                    <div class="hero-actions">
+                        <a class="text-link" href="#projects">Explore selected work <span aria-hidden="true">↓</span></a>
+                        <a class="text-link secondary-link" href="assets/resume.pdf" download>Download resume <span aria-hidden="true">↗</span></a>
                     </div>
                 </div>
+                <p class="hero-index" aria-hidden="true">PORTFOLIO <span>—</span> 2026</p>
             </div>
+        </header>
 
-            <div class="cert-card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <img class="cert-img"
-                    src="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design (1).png"
-                    freeCodeCamp Legacy Responsive Web Design V8 Certificate"
-                    onerror="this.src='https://placehold.co/420x260?text=Certificate'">
-                <div class="cert-meta">
-                    <h3 itemprop="name">Legacy Responsive Web Design V8</h3>
-                    <div class="cert-sub">freeCodeCamp — <span itemprop="startDate">2026</span></div>
-                    <div class="cert-actions">
-                        <button class="cert-view btn-outline" data-title="Legacy Responsive Web Design V8"
-                            data-issuer="freeCodeCamp" data-date="2026"
-                            data-img="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design (1).png"
-                            data-link="https://www.freecodecamp.org/certification/carlooo/responsive-web-design">View</button>
-                        <a href="https://www.freecodecamp.org/certification/carlooo/responsive-web-design" class="btn"
-                            target="_blank">Verify</a>
-                    </div>
+        <section id="about" class="content-section about-section">
+            <div class="section-heading">
+                <p class="section-number">01 / A little about me</p>
+                <h2>Thoughtful support,<br>with a technical side.</h2>
+            </div>
+            <div class="about-layout">
+                <figure class="portrait-frame">
+                    <img src="assets/profile.jpg" alt="Prince Carlo Monacillo" class="about-photo">
+                    <figcaption>IT · Software development · Virtual assistance</figcaption>
+                </figure>
+                <div class="prose about-text">
+                    <p>I am an IT professional and detail-oriented virtual assistant, continuously developing my skills in administrative support, data management, and digital tools.</p>
+                    <p>I assist with data entry, research, organization, and customer support, helping businesses stay productive and organized.</p>
+                    <p>I also have hands-on experience in web and database projects, allowing me to work comfortably with digital platforms and quickly adapt to new systems. In addition, I have experience in IT support, including computer and printer troubleshooting, hardware setup, and basic technical problem-solving.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="cert-card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <img class="cert-img"
-                    src="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design-v9 (1).png"
-                    alt="freeCodeCamp Responsive Web Design"
-                    onerror="this.src='https://placehold.co/420x260?text=Certificate'">
-                <div class="cert-meta">
-                    <h3 itemprop="name">Responsive Web Design</h3>
-                    <div class="cert-sub">freeCodeCamp — <span itemprop="startDate">2026</span></div>
-                    <div class="cert-actions">
-                        <button class="cert-view btn-outline" data-title="Responsive Web Design"
-                            data-issuer="freeCodeCamp" data-date="2026"
-                            data-img="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design-v9 (1).png"
-                            data-link="https://www.freecodecamp.org/certification/carlooo/responsive-web-design-v9">View</button>
-                        <a href="https://www.freecodecamp.org/certification/carlooo/responsive-web-design-v9"
-                            class="btn" target="_blank">Verify</a>
+        <section id="services" class="content-section ruled-section">
+            <div class="section-heading compact-heading">
+                <p class="section-number">02 / How I can help</p>
+                <h2>Services</h2>
+            </div>
+            <ul class="lined-list services-list">
+                <li>Email &amp; Calendar Management</li>
+                <li>Data Entry &amp; Database Organization</li>
+                <li>Online Research &amp; Information Gathering</li>
+                <li>Customer Support &amp; Communication</li>
+                <li>Administrative Assistance</li>
+                <li>File &amp; Document Organization</li>
+                <li>Web &amp; Android Development Support</li>
+                <li>Technical Troubleshooting</li>
+            </ul>
+            <div class="working-note">
+                <p class="section-number">A few things I value</p>
+                <p>Careful, organized work · Clear communication · Confidentiality · Meeting deadlines · Learning as I go</p>
+            </div>
+        </section>
+
+        <section id="experience" class="content-section ruled-section">
+            <div class="section-heading compact-heading">
+                <p class="section-number">03 / Learning by doing</p>
+                <h2>Experience &amp; practice</h2>
+            </div>
+            <div class="experience-list">
+                <article class="experience-item">
+                    <h3>Web development projects</h3>
+                    <p>Completed academic and personal web development projects using HTML, CSS, JavaScript, and PHP. Built CRUD systems connected to MySQL databases, with user authentication, form validation, and dynamic content rendering.</p>
+                </article>
+                <article class="experience-item">
+                    <h3>Database-driven applications</h3>
+                    <p>Practiced basic database structures and CRUD operations, organizing data and connecting applications to structured backend systems.</p>
+                </article>
+                <article class="experience-item">
+                    <h3>Digital records &amp; productivity tools</h3>
+                    <p>Created structured folder systems with consistent naming conventions and used tools such as Google Workspace and collaboration platforms to manage tasks and communication.</p>
+                </article>
+                <article class="experience-item">
+                    <h3>Graphic design with <a href="https://www.canva.com/" target="_blank" rel="noopener noreferrer">Canva</a></h3>
+                    <p>Designed simple layouts for folders and documents, focusing on clarity, structure, and organized presentation.</p>
+                </article>
+                <article class="experience-item">
+                    <h3>Ongoing skills development</h3>
+                    <p>I learn new tools and workflows through hands-on projects, guidance, and consistent practice.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="content-section projects-section">
+            <div class="section-heading">
+                <p class="section-number">04 / Selected projects</p>
+                <h2>Things I’ve worked on.</h2>
+                <p class="section-description">A mix of web applications, a community site, and a design sample.</p>
+            </div>
+            <div class="projects">
+                <article class="project">
+                    <a class="project-image" href="https://github.com/JustbeV/Library" target="_blank" rel="noopener noreferrer" aria-label="Open Anime and Manga Library repository">
+                        <img src="assets/anime-manga-library.png" alt="Anime and Manga Library application">
+                    </a>
+                    <div class="project-content">
+                        <p class="project-type">Web application</p>
+                        <h3>Anime &amp; Manga Library</h3>
+                        <p>A Laravel application for browsing anime and manga collections, with an administrator dashboard for managing entries. The project focuses on structured database design, role-based access, and a responsive layout.</p>
+                        <a class="text-link" href="https://github.com/JustbeV/Library" target="_blank" rel="noopener noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
                     </div>
-                </div>
-            </div>
-
-            <div class="cert-card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <img class="cert-img"
-                    src="assets/certs/www.freecodecamp.org_certification_carlooo_relational-databases-v9.png"
-                    alt="freeCodeCamp Relational Database"
-                    onerror="this.src='https://placehold.co/420x260?text=Certificate'">
-                <div class="cert-meta">
-                    <h3 itemprop="name">Relational Database</h3>
-                    <div class="cert-sub">freeCodeCamp — <span itemprop="startDate">2026</span></div>
-                    <div class="cert-actions">
-                        <button class="cert-view btn-outline" data-title="Relational Database"
-                            data-issuer="freeCodeCamp" data-date="2026"
-                            data-img="assets/certs/www.freecodecamp.org_certification_carlooo_relational-databases-v9.png"
-                            data-link="https://www.freecodecamp.org/certification/carlooo/relational-databases-v9">View</button>
-                        <a href="https://www.freecodecamp.org/certification/carlooo/relational-databases-v9" class="btn"
-                            target="_blank">Verify</a>
+                </article>
+                <article class="project">
+                    <a class="project-image" href="https://www.canva.com/design/DAHCg9WnB2g/CotM1G1rjBoLel1EhIl0aA/edit?utm_content=DAHCg9WnB2g&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" target="_blank" rel="noopener noreferrer" aria-label="Open Folder Design in Canva">
+                        <img src="assets/folder-design.png" alt="Folder layout designed in Canva">
+                    </a>
+                    <div class="project-content">
+                        <p class="project-type">Design sample</p>
+                        <h3>Folder Design</h3>
+                        <p>Visually organized folder layouts made using Canva, demonstrating a simple approach to clear, structured design.</p>
+                        <a class="text-link" href="https://www.canva.com/design/DAHCg9WnB2g/CotM1G1rjBoLel1EhIl0aA/edit?utm_content=DAHCg9WnB2g&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=sharebutton" target="_blank" rel="noopener noreferrer">View design <span aria-hidden="true">↗</span></a>
                     </div>
-                </div>
-            </div>
-
-            <div class="cert-card" itemscope itemtype="https://schema.org/EducationalOccupationalCredential">
-                <img class="cert-img" src="assets/certs/www.freecodecamp.org_certification_carlooo_relational-database-v8.png
-" alt="freeCodeCamp Relational Database" onerror="this.src='https://placehold.co/420x260?text=Certificate'">
-                <div class="cert-meta">
-                    <h3 itemprop="name">Relational Database V8</h3>
-                    <div class="cert-sub">freeCodeCamp — <span itemprop="startDate">2026</span></div>
-                    <div class="cert-actions">
-                        <button class="cert-view btn-outline" data-title="Relational Database V8"
-                            data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_relational-database-v8.png
-" data-link="https://www.freecodecamp.org/certification/carlooo/relational-database-v8">View</button>
-                        <a href="https://www.freecodecamp.org/certification/carlooo/relational-database-v8" class="btn"
-                            target="_blank">Verify</a>
+                </article>
+                <article class="project">
+                    <a class="project-image" href="https://github.com/JustbeV/Ticketing-System" target="_blank" rel="noopener noreferrer" aria-label="Open Ticketing System repository">
+                        <img src="assets/ticketing-system.png" alt="IT support ticketing system">
+                    </a>
+                    <div class="project-content">
+                        <p class="project-type">Web application</p>
+                        <h3>Ticketing System</h3>
+                        <p>A Laravel system for reporting and managing IT support requests. Users can submit tickets, follow their status, and add details or attachments; support staff can update and resolve requests through a structured workflow.</p>
+                        <a class="text-link" href="https://github.com/JustbeV/Ticketing-System" target="_blank" rel="noopener noreferrer">View repository <span aria-hidden="true">↗</span></a>
                     </div>
-                </div>
+                </article>
+                <article class="project">
+                    <a class="project-image" href="https://github.com/JustbeV/SmartDetectorApp" target="_blank" rel="noopener noreferrer" aria-label="Open Smart Detector app repository">
+                        <img src="assets/smart_detector_app.png" alt="Smart water-based fire detection system app">
+                    </a>
+                    <div class="project-content">
+                        <p class="project-type">Hardware &amp; mobile app</p>
+                        <h3>Smart Water-Based Fire Detection System</h3>
+                        <p>A fire detection and suppression project combining hardware sensors, automated alerts, and a mobile app interface. The system can send notifications and optionally contact emergency services.</p>
+                        <div class="project-links">
+                            <a class="text-link" href="https://github.com/JustbeV/SmartDetectorApp" target="_blank" rel="noopener noreferrer">App repository <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="https://github.com/JustbeV/SmartDetector-" target="_blank" rel="noopener noreferrer">Prototype repository <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
+                <article class="project">
+                    <a class="project-image" href="https://justbev.github.io/Tuktokra/" target="_blank" rel="noopener noreferrer" aria-label="Open Tuktokra hiking community website">
+                        <img src="assets/Tuktokra-web.png" alt="Tuktokra hiking community website">
+                    </a>
+                    <div class="project-content">
+                        <p class="project-type">Community website</p>
+                        <h3>Tuktokra — Hiking Community</h3>
+                        <p>Managed a hiking and adventure community website and its Facebook page. Worked on content updates, page structure, and user experience across hikes, guides, gallery, about, and contact pages.</p>
+                        <div class="project-links">
+                            <a class="text-link" href="https://github.com/JustbeV/Tuktokra" target="_blank" rel="noopener noreferrer">GitHub repository <span aria-hidden="true">↗</span></a>
+                            <a class="text-link" href="https://justbev.github.io/Tuktokra/" target="_blank" rel="noopener noreferrer">Live demo <span aria-hidden="true">↗</span></a>
+                        </div>
+                    </div>
+                </article>
             </div>
-        </div>
+        </section>
 
-    </section>
-
-    <!-- HOBBIES -->
-    <section id="hobbies">
-        <h2>Hobbies & Interests</h2>
-        <p class="hobbies-intro">A little peek into who I am outside of work!</p>
-        <div class="hobbies-grid">
-
-            <div class="hobby-card">
-                <!-- <div class="hobby-icon"></div> -->
-                <img src="assets/gaming.gif" alt="Gaming" onerror="this.style.display='none'">
-                <h3>Gaming</h3>
-                <p>I enjoy spending my time gaming, such as playing Dota 2 and play-to-earn games. It keeps me
-                    entertained while also helping me develop teamwork, patience, and strategic thinking.</p>
+        <section id="skills" class="content-section ruled-section skills-section">
+            <div class="section-heading compact-heading">
+                <p class="section-number">05 / Tools &amp; knowledge</p>
+                <h2>Skills &amp; tools</h2>
             </div>
+            <ul class="skill-list" aria-label="Skills and tools">
+                <li>Web Development</li>
+                <li>Database Management</li>
+                <li>API Development</li>
+                <li>Software Testing</li>
+                <li>UI/UX Design</li>
+                <li>Git &amp; Version Control</li>
+                <li>IT Technical Support</li>
+                <li>Network Security</li>
+                <li>Project Management</li>
+                <li>Microsoft Excel</li>
+                <li>CRM Systems</li>
+                <li>Problem-Solving</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Java</li>
+                <li>Python</li>
+                <li>PHP</li>
+                <li>MySQL</li>
+                <li>Computer Maintenance</li>
+                <li>Software Troubleshooting</li>
+            </ul>
+        </section>
 
-            <div class="hobby-card">
-                <!-- <div class="hobby-icon">📺</div> -->
-                <img src="assets/watching-anime.gif" alt="Anime & Manga" onerror="this.style.display='none'">
-                <h3>Anime & Manga</h3>
-                <p>I enjoy spending my time watching anime and reading manga. It inspires my creativity and attention to
-                    detail, especially in my projects.</p>
+        <section id="certifications" class="content-section ruled-section certs-section">
+            <div class="section-heading compact-heading">
+                <p class="section-number">06 / Learning &amp; credentials</p>
+                <h2>Certifications</h2>
+                <p class="section-description">Selected freeCodeCamp certificates. Use “Verify” to view the credential online.</p>
             </div>
-
-            <div class="hobby-card">
-                <!-- <div class="hobby-icon">💻</div> -->
-                <img src="assets/coding.gif" alt="Coding" onerror="this.style.display='none'">
-                <h3>Coding & Building</h3>
-                <p>Building and coding personal projects beyond school tasks, experimenting with ideas and improving my
-                    understanding of how systems work.</p>
+            <div class="cert-list">
+                <article class="cert-row">
+                    <div><h3>B1 English for Developers (Beta)</h3><p>freeCodeCamp · 2026</p></div>
+                    <div class="cert-actions">
+                        <button class="cert-view text-link" type="button" data-title="B1 English for Developers (Beta)" data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_b1-english-for-developers (1).png" data-link="https://www.freecodecamp.org/certification/carlooo/b1-english-for-developers">View certificate</button>
+                        <a class="text-link" href="https://www.freecodecamp.org/certification/carlooo/b1-english-for-developers" target="_blank" rel="noopener noreferrer">Verify <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="cert-row">
+                    <div><h3>Legacy Responsive Web Design V8</h3><p>freeCodeCamp · 2026</p></div>
+                    <div class="cert-actions">
+                        <button class="cert-view text-link" type="button" data-title="Legacy Responsive Web Design V8" data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design (1).png" data-link="https://www.freecodecamp.org/certification/carlooo/responsive-web-design">View certificate</button>
+                        <a class="text-link" href="https://www.freecodecamp.org/certification/carlooo/responsive-web-design" target="_blank" rel="noopener noreferrer">Verify <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="cert-row">
+                    <div><h3>Responsive Web Design</h3><p>freeCodeCamp · 2026</p></div>
+                    <div class="cert-actions">
+                        <button class="cert-view text-link" type="button" data-title="Responsive Web Design" data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_responsive-web-design-v9 (1).png" data-link="https://www.freecodecamp.org/certification/carlooo/responsive-web-design-v9">View certificate</button>
+                        <a class="text-link" href="https://www.freecodecamp.org/certification/carlooo/responsive-web-design-v9" target="_blank" rel="noopener noreferrer">Verify <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="cert-row">
+                    <div><h3>Relational Database</h3><p>freeCodeCamp · 2026</p></div>
+                    <div class="cert-actions">
+                        <button class="cert-view text-link" type="button" data-title="Relational Database" data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_relational-databases-v9.png" data-link="https://www.freecodecamp.org/certification/carlooo/relational-databases-v9">View certificate</button>
+                        <a class="text-link" href="https://www.freecodecamp.org/certification/carlooo/relational-databases-v9" target="_blank" rel="noopener noreferrer">Verify <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
+                <article class="cert-row">
+                    <div><h3>Relational Database V8</h3><p>freeCodeCamp · 2026</p></div>
+                    <div class="cert-actions">
+                        <button class="cert-view text-link" type="button" data-title="Relational Database V8" data-issuer="freeCodeCamp" data-date="2026" data-img="assets/certs/www.freecodecamp.org_certification_carlooo_relational-database-v8.png" data-link="https://www.freecodecamp.org/certification/carlooo/relational-database-v8">View certificate</button>
+                        <a class="text-link" href="https://www.freecodecamp.org/certification/carlooo/relational-database-v8" target="_blank" rel="noopener noreferrer">Verify <span aria-hidden="true">↗</span></a>
+                    </div>
+                </article>
             </div>
+        </section>
 
-            <div class="hobby-card">
-                <div class="hobby-icon">🎨</div>
-                <img src="assets/hobby-design.jpg" alt="Design" onerror="this.style.display='none'">
-                <h3>Digital Design</h3>
-                <p>Enjoy creating clean and simple layouts using Canva, combining creativity with organization to
-                    produce visually appealing designs.</p>
+        <section id="hobbies" class="content-section ruled-section hobbies-section">
+            <div class="section-heading compact-heading">
+                <p class="section-number">07 / Away from the desk</p>
+                <h2>Outside work</h2>
+                <p class="section-description">A few things I enjoy in my own time.</p>
             </div>
-
-            <div class="hobby-card">
-                <!-- <div class="hobby-icon"></div> -->
-                <img src="assets/activate.jpg" alt="Design" onerror="this.style.display='none'">
-                <h3>Active LifeStyle</h3>
-                <p>I am a sporty person who enjoys running, hiking, and exploring different outdoor places. I like
-                    activities that challenge me physically and help me stay healthy, and I enjoy making the most of my
-                    time outside.</p>
+            <div class="hobbies-grid">
+                <article class="hobby-item"><img src="assets/gaming.gif" alt="" loading="lazy"><div><h3>Gaming</h3><p>I enjoy games such as Dota 2 and play-to-earn games. They keep me entertained and give me opportunities to practice teamwork, patience, and strategy.</p></div></article>
+                <article class="hobby-item"><img src="assets/watching-anime.gif" alt="" loading="lazy"><div><h3>Anime &amp; Manga</h3><p>Watching anime and reading manga inspire my creativity and attention to detail, including in my projects.</p></div></article>
+                <article class="hobby-item"><img src="assets/coding.gif" alt="" loading="lazy"><div><h3>Coding &amp; Building</h3><p>I like building personal projects beyond school tasks, experimenting with ideas, and learning how systems work.</p></div></article>
+                <article class="hobby-item"><img src="assets/folder-design.png" alt="" loading="lazy"><div><h3>Digital Design</h3><p>I enjoy creating clean, simple layouts in Canva, combining creativity with organization.</p></div></article>
+                <article class="hobby-item"><img src="assets/activate.jpg" alt="" loading="lazy"><div><h3>Running &amp; Hiking</h3><p>I enjoy staying active, exploring outdoor places, and challenging myself through running and hiking.</p></div></article>
             </div>
+        </section>
 
-        </div>
+        <section id="availability" class="content-section availability-section">
+            <p class="section-number">Availability &amp; pricing</p>
+            <p>Contact me for pricing details.</p>
+        </section>
 
-    </section>
+        <section id="contact" class="contact-section">
+            <div class="contact-copy">
+                <p class="section-number">08 / Say hello</p>
+                <h2>Have a project<br>or need a hand?</h2>
+                <p>Looking for a dependable virtual assistant or technical support? Let’s discuss how I can help.</p>
+            </div>
+            <div class="contact-links">
+                <a class="contact-link primary-contact" href="mailto:itsmetheit@gmail.com?subject=Virtual%20Assistant%20Inquiry">Email me <span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="https://github.com/JustbeV" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="https://www.linkedin.com/in/prince-carlo-monacillo-51b742370/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+                <a class="contact-link" href="assets/resume.pdf" download>Download resume <span aria-hidden="true">↓</span></a>
+            </div>
+        </section>
+    </main>
 
-    <!-- AVAILABILITY -->
-    <section id="availability">
-        <h2>Pricing</h2>
-        <p>Contact for pricing details. (I'm broke, so generous offers are very welcome 😅)</p>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-        <h2>Contact Me</h2>
-        <p>
-            Looking for a dependable Virtual Assistant to support your business?
-            Let's discuss how I can help you save time and stay organized.
-        </p>
-
-        <div class="contact-links">
-            <a href="mailto:itsmetheit@gmail.com?subject=Virtual Assistant Inquiry" class="btn">
-                Email Me
-            </a>
-            <a href="https://github.com/JustbeV" target="_blank" class="btn">
-                GitHub Profile
-            </a>
-            <a href="https://www.linkedin.com/in/prince-carlo-monacillo-51b742370/" target="_blank" class="btn">
-                LinkedIn
-            </a>
-            <a href="assets/resume.pdf" download class="btn btn-outline-dark">
-                Download Resume
-            </a>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        &copy; 2025-<span id="currentYear"></span> Prince Carlo Monacillo. All rights reserved.
+    <footer class="site-footer">
+        <a class="wordmark" href="#top">PCM<span>.</span></a>
+        <p>© 2025–<span id="currentYear"></span> Prince Carlo Monacillo</p>
+        <a href="#top" class="back-to-top">Back to top ↑</a>
     </footer>
 
-    <!-- CERTIFICATE MODAL -->
     <div id="certModal" class="cert-modal" aria-hidden="true">
-        <div class="cert-modal-content" role="dialog" aria-labelledby="certTitle" aria-modal="true">
-            <button class="cert-close" aria-label="Close">✕</button>
-            <img id="certModalImg" src="" alt="Certificate image"
-                onerror="this.src='https://placehold.co/720x480?text=Certificate'">
-            <h3 id="certTitle"></h3>
-            <p id="certIssuer" style="color:#666;"></p>
-            <a id="certVerify" class="btn" href="#" target="_blank">Verify</a>
+        <div class="cert-modal-content" role="dialog" aria-labelledby="certTitle" aria-describedby="certIssuer" aria-modal="true" tabindex="-1">
+            <button class="cert-close" type="button" aria-label="Close certificate">×</button>
+            <img id="certModalImg" src="" alt="Certificate image">
+            <h2 id="certTitle"></h2>
+            <p id="certIssuer"></p>
+            <a id="certVerify" class="text-link" href="#" target="_blank" rel="noopener noreferrer">Verify certificate <span aria-hidden="true">↗</span></a>
         </div>
     </div>
 
     <script src="script.js"></script>
-
 </body>
 
 </html>
